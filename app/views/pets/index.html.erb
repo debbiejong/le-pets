@@ -1,0 +1,9 @@
+<h1>Found pets</h1>
+
+<%= link_to "Add a new pet", new_pet_path %>
+
+<% @pets.each do |pet| %>
+  <h2><%= link_to pet.name, pet_path(pet) %></h2>
+  <p><%= pet.category %></p>
+  <p><%= pet.found_on %></p>
+<% end %>
