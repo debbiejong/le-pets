@@ -22,7 +22,7 @@ class PetsController < ApplicationController
   end
 
   def update
-    @pet = Pet.update(pet_params)
+    @pet.update(pet_params)
     redirect_to pet_path(@pet)
   end
 
