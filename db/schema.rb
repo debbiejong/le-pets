@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20180118010241) do
 
   create_table "pets", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "category"
     t.date "found_on"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
